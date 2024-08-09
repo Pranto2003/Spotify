@@ -21,11 +21,13 @@ body {
   margin: 3px;
   display: flex;
   position: relative;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .home {
   filter: invert(1);
   position: relative;
+  display: flex;
+  /* flex-wrap: wrap; */
 }
 
 .home ul li {
@@ -33,7 +35,7 @@ body {
   display: flex;
   gap: 12px;
   margin-bottom: 10px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .searchimg {
   width: 30px;
@@ -47,13 +49,16 @@ body {
   filter: invert(1);
   margin-left: 15px;
   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .library {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-left: 8px;
   margin-top: 10px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .library img {
   width: 30px;
@@ -64,6 +69,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 70vh;
+  flex-wrap: wrap;
 }
 .footer ul {
   left: 0;
@@ -72,12 +78,14 @@ body {
   gap: 30px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .footer ul li {
   margin-top: 430px;
   list-style: none;
   color: white;
   display: flex;
+  flex-wrap: wrap;
 }
 .footer ul li:hover {
   text-decoration: underline;
@@ -99,6 +107,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-left: 0px;
+  flex-wrap: wrap;
 }
 .navbar button:nth-child(1) {
   width: 90px;
@@ -110,6 +119,7 @@ body {
   border: none;
   color: gray;
   font-size: 16px;
+  flex-wrap: wrap;
 }
 .navbar button:nth-child(2) {
   width: 90px;
@@ -132,6 +142,24 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+.holder button {
+  position: absolute;
+  border: none;
+  z-index: 10;
+  right: 10px;
+  bottom: 60px;
+  background-color: rgb(20, 244, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 30px;
+}
+.card button :hover {
+  background-color: rgb(4, 86, 4);
+  cursor: pointer;
+  display: flex;
+}
 .card {
   margin-top: 20px;
   margin-left: 10px;
@@ -141,6 +169,7 @@ body {
   /* border: 2px solid red; */
   position: relative;
   background-color: #121212;
+  flex-wrap: wrap;
 }
 .card img {
   width: 190px;
@@ -158,14 +187,13 @@ body {
   border: 5px solid white;
   border-radius: 10px;
 }
-.card button{
+.card button {
   /* width: 5px;
   height: 10px; */
   position: absolute;
   z-index: 2;
-
 }
-.card button img{
+.card button img {
   width: 10px;
   height: 10px;
 }
